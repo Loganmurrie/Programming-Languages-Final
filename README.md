@@ -1,4 +1,5 @@
-WELCOME TO TOM CLANCY'S SEIGE CODE : 
+#WELCOME TO 
+#TOM CLANCY'S SEIGE CODE
 
 **Siege Code** is a custom stack-based interpreted language built using the names of operators from *Tom Clancy's Rainbow Six Siege*. It reads `.txt` files that contain only operator names and interprets them as commands, modes, and data instructions.
 
