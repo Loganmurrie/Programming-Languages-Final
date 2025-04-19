@@ -1,4 +1,4 @@
-#  Welcome to Tom Clancy's Seige Interpreter 
+#  Welcome to Tom Clancy's Siege Interpreter 
 
 **Siege Code** is a custom stack-based interpreted language using operator names from the famous game "Tom Clancy's Rainbow Six Seige". 
 
