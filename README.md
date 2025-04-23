@@ -77,6 +77,6 @@ Hello
 
 You’re not just writing code — you're launching missions.  
 From `Glaz`'s math shots to `Doc`'s reverse tactics, every line is tactical.  
-Deploy your `.txt` files, command your operators, and **let Siege Code breach the system**. 💻🚪💥
+Deploy your `.siege` files, command your operators, and **let Siege Code breach the system**. 💻🚪💥
 
 > 🫡 *“Complete the Mission and Execute the Defuse, Operator.”*
