@@ -1,19 +1,11 @@
-def make_reverse_file(input_text, file_name="reversestring.siege"):
-    f = open(file_name, 'w')
-    f.write("Tachanka Doc\n")
-    for ch in input_text:
-        f.write("Thermite " + str(ord(ch)) + "\n")
-        f.write("Azami\n")
-    f.close()
-
 def msg_mode(stack):
-    return chr(stack.pop())
+    return chr(stack.pop()) if stack else ''
 
 def cat_mode(stack):
-    return chr(stack.pop())
+    return chr(stack.pop()) if stack else ''
 
 def reverse_mode(stack):
-    return chr(stack.pop())
+    return chr(stack.pop()) if stack else ''
 
 def multiply_mode(stack):
     a = int(input("Enter the first number to multiply: "))
@@ -79,9 +71,4 @@ def run(file_path):
 
 if __name__ == "__main__":
     name = input("Enter the name of the program you want to run: ").strip()
-
-    if name == "reversestring.siege":
-        word = input("What string would you like to reverse? ")
-        make_reverse_file(word, name)
-
     run(name)
