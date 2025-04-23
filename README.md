@@ -1,73 +1,82 @@
-# 🎮 **Welcome to Tom Clancy's Siege Interpreter** 💥
+# 🎮💣 Welcome, Operator, to the **Tom Clancy's Siege Interpreter** 🔐🎯
 
 ![Tom Clancy’s Rainbow Six Siege Code](https://github.com/user-attachments/assets/6d791761-b406-42c8-aec7-851a7d941b51)
 
-**🛠️ Siege Code** is a custom **stack-based** interpreted language powered by operator names from the tactical world of **Rainbow Six Siege**. Dive in and use your favorite Operator names to run wild code ops! 🧠💣
+> 🛡️ *"Breach the stack. Secure the logic. Execute the mission."*  
+> This isn't your ordinary language. This is **Siege Code** — a custom **stack-based** language written in **Python** where your commands are led by Operators from *Rainbow Six Siege*. 🤯
+
+Whether you're breaching a door or pushing ASCII, you're in for an elite coding op. 🎖️🐍
 
 ---
 
-## 🧾 **Siege Code Cheat Sheet**
+## 💾 Installation
 
-Here’s your tactical operator briefing:
+1. 🐍 Make sure you have **Python 3** installed.
+2. 📦 Clone the repo:
+   ```python
+   # Clone the repository
+   git clone https://github.com/your-username/siege-interpreter.git
+   cd siege-interpreter
+   ```
+3. 🚀 Run the interpreter:
+   ```python
+   # Run the interpreter with a script file
+   python seige_interpreter.py helloworld.siege
+   ```
+---
 
-| 🪖 **Operator** | 📋 **Functionality** |
-|----------------|----------------------|
-| **🧱 Tachanka** | **The Commander.** Must always be the **first word**. Use it like `Tachanka Bandit` to pick a mode. |
-| **🔌 Bandit** | **Hello World Mode.** Push letters using `Thermite` ops, then use `Azami` to print the word's "Hello World"|
-| **🏰 Castle** | **Sentence Mode.** Sets up a Castle and will print back to you the sentence or word you spelled using Thermite "num" |
-| **🩺 Doc** | **Reverse Mode.** Enter a word or sentence, and Doc will revive you, but will REVERSE the output !  |
-| **🎯 Glaz** | **Sniper Math.** He’ll ask for two numbers, throw a smoke bomb, and begin multiplying them together and print out the result  |
-| **❄️ Frost** | **Repeater Mode.** Say a word and how many times you want it repeated—Frost will then drop down her frost mat, however many times you need her to (the frost mat being the word or sentence) |
-| **🔥 Thermite** | **ASCII Charges.** Set A Breach Charge by using  `Thermite 65` to push the letter **A** to the stack. |
-| **🧤 Azami** | **Stack Pop + Print.** Pops the top value from the stack like a kiva barrier, prompts for input, and prints it. Use right after `Thermite` for smooth ops. |
+## 🧠📜 Siege Protocol: **Operator Commands**
+
+| 🪖 **Operator** | 💬 **Role in the Field (Command Behavior)** |
+|----------------|---------------------------------------------|
+| 🧱 **Tachanka** | 💡 **Mission Briefing.** Always **start** your script with `Tachanka <mode>`. This sets the tone for the operation. |
+| 🔌 **Bandit**   | 🗯️ **Comms Mode.** Push letters with `Thermite`, then use `Azami` to decrypt and print the message. |
+| 🏰 **Castle**   | 🏗️ **Sentence Constructor.** Turns ASCII stack values into readable sentences. Solid build. |
+| 🩺 **Doc**      | 🔄 **Reversal Expert.** Prompts for input and reverses it. Good under pressure. |
+| 🎯 **Glaz**     | 🎯 **Sniper Math.** Requests 2 numbers, multiplies them with precision. |
+| ❄️ **Frost**    | 🔁 **Echo Trap.** Prompts for a word and how many times to repeat it. |
+| 🔥 **Thermite** | 💥 **ASCII Charge.** Format: `Thermite 65` → pushes ASCII 'A' to the stack. |
+| 🧤 **Azami**    | 🧷 **Print & Prompt.** Pops the top value and prints. Always use after `Thermite`. |
 
 ---
 
-Ready to deploy your first mission? Type up your siege script, pick your Operator mode, and let the interpreter do the breaching! 💻🚪💣
+## 🚀 Example Deployment
 
+```python
+Tachanka Bandit
+Thermite 72
+Thermite 101
+Thermite 108
+Thermite 108
+Thermite 111
+Azami
+Azami
+Azami
+Azami
+Azami
+```
 
+🧠 **Expected Output:**  
+```
+Hello
+```
 
+---
 
+## 🧰 Loadout Checklist
 
+- ✔️ Python 3
+- ✔️ Stack-based interpreter
+- ✔️ ASCII manipulation
+- ✔️ Real-time input
+- ✔️ Operator-themed command set
 
+---
 
+## 🎮 Final Briefing
 
+You’re not just writing code — you're launching missions.  
+From `Glaz`'s math shots to `Doc`'s reverse tactics, every line is tactical.  
+Deploy your `.txt` files, command your operators, and **let Siege Code breach the system**. 💻🚪💥
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-This was TOTALLY not styled by chatGPT... :|
+> 🫡 *“Complete the Mission and Execute the Defuse, Operator.”*
