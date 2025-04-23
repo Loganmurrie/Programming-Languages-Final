@@ -44,13 +44,14 @@ def run(file_path):
                 cat_input_loaded = False
             elif parts[1] == "Doc":
                 mode = "reverse"
+                cat_input_loaded = False
             elif parts[1] == "Glaz":
                 mode = "multiply"
             elif parts[1] == "Frost":
                 mode = "repeat"
             output = ""
         elif parts[0] == "Thermite":
-            if mode == "cat" and not cat_input_loaded:
+            if mode in ("cat", "reverse") and not cat_input_loaded:
                 user_input = input("Enter a message to echo: ")
                 for ch in reversed(user_input):
                     stack.append(ord(ch))
@@ -69,7 +70,8 @@ def run(file_path):
                 while stack:
                     output += cat_mode(stack)
             elif mode == "reverse":
-                output += reverse_mode(stack)
+                while stack:
+                    output += reverse_mode(stack)
             elif mode == "multiply":
                 output = multiply_mode(stack)
                 break
