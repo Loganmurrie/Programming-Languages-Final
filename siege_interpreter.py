@@ -1,11 +1,14 @@
-def msg_mode(stack):
+def pop_char(stack):
     return chr(stack.pop()) if stack else ''
+
+def msg_mode(stack):
+    return pop_char(stack)
 
 def cat_mode(stack):
-    return chr(stack.pop()) if stack else ''
+    return pop_char(stack)
 
 def reverse_mode(stack):
-    return chr(stack.pop()) if stack else ''
+    return pop_char(stack)
 
 def multiply_mode(stack):
     a = int(input("Enter the first number to multiply: "))
@@ -21,6 +24,7 @@ def run(file_path):
     stack = []
     output = ""
     mode = ""
+    cat_input_loaded = False
 
     with open(file_path, 'r') as f:
         lines = f.readlines()
@@ -37,6 +41,7 @@ def run(file_path):
                 mode = "msg"
             elif parts[1] == "Castle":
                 mode = "cat"
+                cat_input_loaded = False  # reset flag for fresh input
             elif parts[1] == "Doc":
                 mode = "reverse"
             elif parts[1] == "Glaz":
@@ -45,8 +50,18 @@ def run(file_path):
                 mode = "repeat"
             output = ""
         elif parts[0] == "Thermite":
-            num = int(parts[1])
-            stack.append(num)
+            if mode == "cat" and not cat_input_loaded:
+                user_input = input("Enter a message to echo: ")
+                for ch in reversed(user_input):  # reverse for stack order
+                    stack.append(ord(ch))
+                cat_input_loaded = True
+            else:
+                num = int(parts[1])
+                if 0 <= num <= 127:
+                    stack.append(num)
+                else:
+                    print("Invalid ASCII value:", num)
+                    return
         elif parts[0] == "Azami":
             if mode == "msg":
                 output += msg_mode(stack)
