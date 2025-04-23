@@ -1,98 +1,87 @@
-import sys
-import os
+def make_reverse_file(input_text, file_name="reversestring.siege"):
+    f = open(file_name, 'w')
+    f.write("Tachanka Doc\n")
+    for ch in input_text:
+        f.write("Thermite " + str(ord(ch)) + "\n")
+        f.write("Azami\n")
+    f.close()
 
-def generate_reverse_program_file(user_input, output_file="reversestring.txt"):
-    with open(output_file, 'w') as f:
-        f.write("Tachanka Doc\n")  # Doc = reverse mode
-        for char in user_input:
-            f.write(f"Thermite {ord(char)}\n")
-            f.write("Azami\n")
+def msg_mode(stack):
+    return chr(stack.pop())
 
-def run_siege_program(file_path, args):
-    mode = None
+def cat_mode(stack):
+    return chr(stack.pop())
+
+def reverse_mode(stack):
+    return chr(stack.pop())
+
+def multiply_mode(stack):
+    a = int(input("Enter the first number to multiply: "))
+    b = int(input("Enter the second number to multiply: "))
+    return str(a * b)
+
+def repeat_mode(stack):
+    word = input("Enter the string to repeat: ")
+    times = int(input("Enter how many times to repeat it: "))
+    return (word + '\n') * times
+
+def run(file_path):
     stack = []
-    message = ""
+    output = ""
+    mode = ""
 
-    mode_map = {
-        "Bandit": "msg",
-        "Castle": "cat",
-        "Doc": "reverse",
-        "Glaz": "multiply",
-        "Frost": "repeat"
-    }
-
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
 
     for line in lines:
         line = line.strip()
-        if not line:
+        if line == "":
             continue
 
-        tokens = line.split()
+        parts = line.split()
 
-        if tokens[0] == "Tachanka":
-            raw_mode = tokens[1]
-            if raw_mode not in mode_map:
-                raise RuntimeError(f"Unknown mode: {raw_mode}")
-            mode = mode_map[raw_mode]
-            message = ""
-            continue
-
-        if tokens[0] == "Thermite":
-            try:
-                val = int(tokens[1])
-                stack.append(val)
-            except ValueError:
-                raise RuntimeError(f"Invalid Thermite value: {tokens[1]}")
-
-        elif tokens[0] == "Azami":
-            if not stack and mode not in ["multiply", "repeat"]:
-                raise RuntimeError("Azami called but stack is empty.")
-            
-            if mode in ["msg", "cat", "reverse"]:
-                val = stack.pop()
-                message += chr(val)
-
+        if parts[0] == "Tachanka":
+            if parts[1] == "Bandit":
+                mode = "msg"
+            elif parts[1] == "Castle":
+                mode = "cat"
+            elif parts[1] == "Doc":
+                mode = "reverse"
+            elif parts[1] == "Glaz":
+                mode = "multiply"
+            elif parts[1] == "Frost":
+                mode = "repeat"
+            output = ""
+        elif parts[0] == "Thermite":
+            num = int(parts[1])
+            stack.append(num)
+        elif parts[0] == "Azami":
+            if mode == "msg":
+                output += msg_mode(stack)
+            elif mode == "cat":
+                output += cat_mode(stack)
+            elif mode == "reverse":
+                output += reverse_mode(stack)
             elif mode == "multiply":
-                try:
-                    a = int(input("Enter the first number to multiply: "))
-                    b = int(input("Enter the second number to multiply: "))
-                    message = str(a * b)
-                    break
-                except ValueError:
-                    raise RuntimeError("Invalid input. Expected two integers.")
-
+                output = multiply_mode(stack)
+                break
             elif mode == "repeat":
-                try:
-                    text = input("Enter the string to repeat: ")
-                    count = int(input("Enter how many times to repeat it: "))
-                    message = text * count
-                    break
-                except ValueError:
-                    raise RuntimeError("Invalid input. Expected a string and a number.")
-
+                output = repeat_mode(stack)
+                break
         else:
-            raise RuntimeError(f"Unknown command: {tokens[0]}")
+            print("Unknown command:", parts[0])
+            return
 
-    print("Output:", message[::-1] if mode == "reverse" else message)
+    if mode == "reverse":
+        output = output[::-1]
+
+    print("Output:", output)
 
 if __name__ == "__main__":
-    if len(sys.argv) >= 2:
-        file = sys.argv[1]
-        extra_args = sys.argv[2:]
+    name = input("Enter the name of the program you want to run: ").strip()
 
-        if file == "reversestring.txt":
-            text = input("What string would you like to reverse? ")
-            generate_reverse_program_file(text, file)
+    if name == "reversestring.siege":
+        word = input("What string would you like to reverse? ")
+        make_reverse_file(word, name)
 
-        run_siege_program(file, extra_args)
-
-    else:
-        file = input("Enter the name of the program file you want to run (e.g., helloworld.txt): ").strip()
-
-        if file == "reversestring.txt":
-            text = input("What string would you like to reverse? ")
-            generate_reverse_program_file(text, file)
-
-        run_siege_program(file, [])
+    run(name)
