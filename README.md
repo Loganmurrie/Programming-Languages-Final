@@ -1,6 +1,8 @@
 #  Welcome to Tom Clancy's Siege Interpreter 
 
-![image](https://github.com/user-attachments/assets/36fc7e8c-9abd-4694-a932-efb74b301a25)
+![image](https://github.com/user-attachments/assets/c38fb8b8-cb18-497d-9ba7-d9b88d66d825)
+
+
 
 **Siege Code** is a custom stack-based interpreted language using operator names from the famous game "Tom Clancy's Rainbow Six Seige". 
 
@@ -12,13 +14,13 @@
 
 | Operator     | Description                                      |
 |--------------|--------------------------------------------------|
-| **Tachanka** | Always comes first. Use it with another word to pick a "mode" (like a task type). |
-| **Bandit**   | Mode : Print out a message you can write with Siege Operators. When using this, you will write: Thermite "num" and it will get the ASCII value of that and turn it into a letter!  |
-| **Castle**   | Mode : Takes in a sentence or a word and prints it for you to see!        |
-| **Doc**      | Mode : Prompts user for input string and prints the reversed version |
-| **Glaz**     | Mode : Asks for 2 numbers and will multiply them together and print out that number |
-| **Frost**    | Mode : Asks for a word and how many times to repeat it. Then will repeat that many times|
-| **Thermite** | Followed by an ASCII number to push |
-| **Azami**    | pops value from the stack and it triggers user input prompt and prints the result |
+| **Tachanka** | Always comes first. Use it with another word to pick a "mode" |
+| **Bandit**   | Mode: Print out a message you can write with Siege Operators.  |
+| **Castle**   | Mode: Takes in a sentence or a word and prints it for you to see!        |
+| **Doc**      | Mode: Prompts the user for input word or a sentence and prints the reversed version of that word or sentence |
+| **Glaz**     | Mode: Asks for 2 numbers and will multiply them together and print out that number |
+| **Frost**    | Mode: Asks for a word and how many times to repeat it. Then will repeat that many times|
+| **Thermite** | When using this, you will write: Thermite "num" and it will treat that number as an ASCII value and turn it into a letter! |
+| **Azami**    | Gets the letter that was just put on the stack, and it triggers a user input prompt and prints the result! ALWAYS USE THIS AFTER THERMITE "num"  |
 
 ---
