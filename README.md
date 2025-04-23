@@ -20,7 +20,7 @@
 | **Doc**      | Mode: Prompts the user for input word or a sentence and prints the reversed version of that word or sentence |
 | **Glaz**     | Mode: Asks for 2 numbers and will multiply them together and print out that number |
 | **Frost**    | Mode: Asks for a word and how many times to repeat it. Then will repeat that many times|
-| **Thermite** | When using this, you will write: Thermite "num" and it will treat that number as an ASCII value and turn it into a letter! |
+| **Thermite** | When using this, you will write: Thermite "num, and it will treat that number as an ASCII value and turn it into a letter! |
 | **Azami**    | Gets the letter that was just put on the stack, and it triggers a user input prompt and prints the result! ALWAYS USE THIS AFTER THERMITE "num"  |
 
 ---
