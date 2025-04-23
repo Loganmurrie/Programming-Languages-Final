@@ -41,7 +41,7 @@ def run(file_path):
                 mode = "msg"
             elif parts[1] == "Castle":
                 mode = "cat"
-                cat_input_loaded = False  # reset flag for fresh input
+                cat_input_loaded = False
             elif parts[1] == "Doc":
                 mode = "reverse"
             elif parts[1] == "Glaz":
@@ -52,7 +52,7 @@ def run(file_path):
         elif parts[0] == "Thermite":
             if mode == "cat" and not cat_input_loaded:
                 user_input = input("Enter a message to echo: ")
-                for ch in reversed(user_input):  # reverse for stack order
+                for ch in reversed(user_input):
                     stack.append(ord(ch))
                 cat_input_loaded = True
             else:
@@ -66,7 +66,8 @@ def run(file_path):
             if mode == "msg":
                 output += msg_mode(stack)
             elif mode == "cat":
-                output += cat_mode(stack)
+                while stack:
+                    output += cat_mode(stack)
             elif mode == "reverse":
                 output += reverse_mode(stack)
             elif mode == "multiply":
