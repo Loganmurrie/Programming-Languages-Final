@@ -12,7 +12,7 @@ Here’s your tactical operator briefing:
 
 | 🪖 **Operator** | 📋 **Functionality** |
 |----------------|----------------------|
-| **🧱 Tachanka** | **The Commander.** Must always be the **first word**. Use it like `Tachanka Bandit` to pick a mode. |
+| **🧱 Tachanka**     | **The Commander.** Must always be the **first word**. Use it like `Tachanka Bandit` to pick a mode. |
 | **🔌 Bandit** | **Message Mode.** Push letters using `Thermite` ops, then use `Azami` to print them! |
 | **🏰 Castle** | **Sentence Builder.** Converts your ASCII stack into full sentences. Clean and efficient. |
 | **🩺 Doc** | **Reverse Mode.** Enter a word or sentence, and Doc will flip it backwards! |
