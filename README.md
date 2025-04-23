@@ -45,14 +45,14 @@ Whether you're breaching a door or pushing ASCII, you're in for an elite coding 
 ```python
 Tachanka Bandit
 Thermite 72
+Azami
 Thermite 101
+Azami
 Thermite 108
+Azami
 Thermite 108
+Azami
 Thermite 111
-Azami
-Azami
-Azami
-Azami
 Azami
 ```
 
