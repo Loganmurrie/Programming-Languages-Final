@@ -8,13 +8,13 @@
 
 | Operator     | Description                                      |
 |--------------|--------------------------------------------------|
-| **Tachanka** | Must be the first word in the file. Used as `Tachanka <mode>` |
-| **Bandit**   | Print characters from pushed ASCII values        |
-| **Castle**   | Build a sentence from pushed ASCII values        |
-| **Doc**      | Prompts user for input string and prints reversed version |
+| **Tachanka** | Must be the first word in the file. Used as Tachanka <mode>  to tell the interpreter what mode to use |
+| **Bandit**   | Prints the characters from pushed ASCII values         |
+| **Castle**   | Build a sentence off of the pushed ASCII values        |
+| **Doc**      | Prompts user for input string and prints the reversed version |
 | **Glaz**     | Prompts user for two numbers and prints their product |
 | **Frost**    | Prompts user for a string and count; repeats it  |
 | **Thermite** | Followed by an ASCII number to push |
-| **Azami**    | In `msg`, `cat`, and `reverse` modes, pops value from stack and builds output; in `multiply`, `repeat`, and `reverse`, it triggers user input prompt and prints result |
+| **Azami**    | pops value from the stack and it triggers user input prompt and prints the result |
 
 ---
