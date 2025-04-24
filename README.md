@@ -40,7 +40,7 @@ Whether you're breaching a door or pushing ASCII, you're in for an elite coding 
 
 ---
 
-## 🚀 Example Deployment
+##  Example Deployment
 
 ```python
 Tachanka Bandit
