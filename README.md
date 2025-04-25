@@ -31,10 +31,10 @@ Whether you're breaching a door or pushing ASCII, you're in for an elite coding 
 |----------------|---------------------------------------------|
 |  **Tachanka** |  **Mission Briefing.** Always **start** your script with `Tachanka <mode>`. This sets the tone for the operation. |
 |  **Bandit**   |  **Comms Mode.** Push letters with `Thermite`, then use `Azami` to decrypt and print the message. |
-|  **Castle**   |  **Sentence Constructor.** Turns ASCII stack values into readable sentences. Solid build. |
-|  **Doc**      |  **Reversal Expert.** Prompts for input and reverses it. Good under pressure. |
-|  **Glaz**     |  **Sniper Math.** Requests 2 numbers, multiplies them with precision. |
-|  **Frost**    |  **Echo Trap.** Prompts for a word and how many times to repeat it. |
+|  **Castle**   |  **Sentence Constructor.** A Mode that turns ASCII stack values into readable sentences. Solid build. |
+|  **Doc**      |  **Reversal Expert.** A Mode that prompts for input and reverses it. Good under pressure. |
+|  **Glaz**     |  **Sniper Math.** A Mode that will request 2 numbers, and then multiply them with precision. |
+|  **Frost**    |  **Echo Trap.** A Mode that prompts for a word and how many times to repeat it, and will repeat it that many times. |
 |  **Thermite** |  **ASCII Charge.** Format: `Thermite 65` → pushes ASCII 'A' to the stack. |
 |  **Azami**    |  **Print & Prompt.** Pops the top value and prints. Always use after `Thermite`. |
 
