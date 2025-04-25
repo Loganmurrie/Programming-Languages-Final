@@ -25,6 +25,10 @@ Siege Code uses this stack to build up letters, sentences, math results, and mor
 
 ##  Siege Protocol: **Operator Commands**
 
+<p align="center">
+  <img src="assets/azami.gif" alt="Siege Code Animation" />
+</p>
+
 Here are all the Operators you’ll use in Siege Code:
 
 | **Operator** | **What It Does** | **Type** |
@@ -70,6 +74,10 @@ Hello
 ```
 
 ##  Final Briefing
+
+<p align="center">
+  <img src="assets/mozzie.gif" alt="Siege Code Animation" />
+</p>
 
 You’re not just writing code — you're launching missions.  
 From `Glaz`'s math shots to `Doc`'s reverse tactics, every line is tactical.  
