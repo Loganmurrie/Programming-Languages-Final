@@ -1,6 +1,8 @@
 #  Welcome, Operator, to the **Tom Clancy's Siege Interpreter** 
 
-![Siege Code Animation](assets/Rainbow.gif)
+<p align="center">
+  <img src="assets/Rainbow.gif" alt="Siege Code Animation" />
+</p>
 
 >  *"Breach the stack. Secure the logic. Execute the mission."*  
 > This isn't your ordinary language. This is **Siege Code** — a custom **stack-based** language written in **Python**, where your commands are led by Operators from *Rainbow Six Siege*. 
