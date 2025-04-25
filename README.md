@@ -5,24 +5,8 @@
 >  *"Breach the stack. Secure the logic. Execute the mission."*  
 > This isn't your ordinary language. This is **Siege Code** — a custom **stack-based** language written in **Python** where your commands are led by Operators from *Rainbow Six Siege*. 
 
-Whether you're breaching a door or pushing ASCII, you're in for an elite coding op. 
+Whether breaching a door or pushing ASCII, you're in for an elite coding op. 
 
----
-
-## Installation
-
-1.  Make sure you have **Python 3** installed.
-2.  Clone the repo:
-   ```python
-   # Clone the repository
-   git clone https://github.com/your-username/siege-interpreter.git
-   cd siege-interpreter
-   ```
-3.  Run the interpreter:
-   ```python
-   # Run the interpreter with a script file
-   python seige_interpreter.py helloworld.siege
-   ```
 ---
 
 ##  Siege Protocol: **Operator Commands**
@@ -60,18 +44,6 @@ Azami
 ```
 Hello
 ```
-
----
-
-##  Loadout Checklist
-
-- ✔️ Python 3
-- ✔️ Stack-based interpreter
-- ✔️ ASCII manipulation
-- ✔️ Real-time input
-- ✔️ Operator-themed command set
-
----
 
 ##  Final Briefing
 
