@@ -1,6 +1,7 @@
 #  Welcome, Operator, to the **Tom Clancy's Siege Interpreter** 
 
-![Tom Clancy’s Rainbow Six Siege Code](https://github.com/user-attachments/assets/6d791761-b406-42c8-aec7-851a7d941b51)
+![image](https://github.com/user-attachments/assets/3a87a373-6ccb-4223-a3f0-7517c219bcfa)
+
 
 >  *"Breach the stack. Secure the logic. Execute the mission."*  
 > This isn't your ordinary language. This is **Siege Code** — a custom **stack-based** language written in **Python** where your commands are led by Operators from *Rainbow Six Siege*. 
