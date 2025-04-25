@@ -7,11 +7,11 @@
 >  *"Breach the stack. Secure the logic. Execute the mission."*  
 > This isn't your ordinary language. This is **Siege Code** — a custom **stack-based** language written in **Python**, where your commands are led by Operators from *Rainbow Six Siege*. 
 
-Whether you're breaching a door or pushing ASCII, you're in for an elite coding op.
+Whether breaching a door or pushing ASCII, you're in for an elite coding op.
 
 ---
 
-## 🧠 What is Siege Code?
+## What is Siege Code?
 
 Siege Code is a **fun and simple programming language** designed for beginners.
 
@@ -23,7 +23,7 @@ Siege Code uses this stack to build up letters, sentences, math results, and mor
 
 ---
 
-## 🛠️ Siege Protocol: **Operator Commands**
+##  Siege Protocol: **Operator Commands**
 
 Here are all the Operators you’ll use in Siege Code:
 
@@ -67,7 +67,6 @@ Azami
 
 ```
 Hello
-
 ```
 
 ##  Final Briefing
