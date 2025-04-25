@@ -14,7 +14,7 @@ Whether breaching a door or pushing ASCII, you're in for an elite coding op.
 |  **Operator** |  **Role in the Field (Command Behavior)** |
 |----------------|---------------------------------------------|
 |  **Tachanka** |  **Mission Briefing.** Always **start** your script with `Tachanka <mode>`. This sets the tone for the operation. |
-|  **Bandit**   |  **Comms Mode.** Push letters with `Thermite`, then use `Azami` to decrypt and print the message. |
+|  **Bandit**   |  **Comms Mode.** A Mode that lets you push letters with `Thermite`, then use `Azami` to decrypt and print the message. |
 |  **Castle**   |  **Sentence Constructor.** A Mode that turns ASCII stack values into readable sentences. Solid build. |
 |  **Doc**      |  **Reversal Expert.** A Mode that prompts for input and reverses it. Good under pressure. |
 |  **Glaz**     |  **Sniper Math.** A Mode that will request 2 numbers, and then multiply them with precision. |
