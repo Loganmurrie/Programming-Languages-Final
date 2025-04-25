@@ -1,6 +1,6 @@
 #  Welcome, Operator, to the **Tom Clancy's Siege Interpreter** 
 
-![image](https://github.com/user-attachments/assets/3a87a373-6ccb-4223-a3f0-7517c219bcfa)
+![Siege Code Animation](assets/Rainbow.gif)
 
 
 >  *"Breach the stack. Secure the logic. Execute the mission."*  
