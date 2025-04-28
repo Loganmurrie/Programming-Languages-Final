@@ -50,7 +50,7 @@ Here are all the Operators you’ll use in Siege Code:
 
 ---
 
-## ✅ Example Deployment
+## ✅ Example Deployments
 
 Let’s say you want to print the word `Hello`.
 
@@ -76,6 +76,48 @@ Azami
 ```
 Hello
 ```
+
+## How to use Fenrir : 
+
+Fenrir can be used in two ways : 
+
+1.) You can say `Fenrir 12` and it wil act like you have inputted `12` as your integer.
+
+```Text
+Tachanka Glaz
+Fenrir 12
+Fenrir 12
+Deimos
+Azami
+
+```
+## Expected Output :
+
+```
+Final Output: 144
+```
+
+OR
+
+2.) You can enter it inside the program
+```Text
+Tachanka Glaz
+Fenrir 
+Fenrir 
+Deimos
+Azami
+```
+
+## Expected Output : 
+
+```
+Enter number 1 to multiply: 12
+Enter number 2 to multiply: 12
+
+Final Output : 144
+
+```
+
 
 ##  Final Briefing
 
