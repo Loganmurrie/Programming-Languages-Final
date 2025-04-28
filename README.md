@@ -34,17 +34,17 @@ Here are all the Operators you’ll use in Siege Code:
 | **Operator** | **What It Does** | **Type** |
 |--------------|------------------|----------|
 | **Tachanka** | Mission Briefing. Always **start** your script with `Tachanka <mode>`. This tells Siege Code which mode you're using. | Setup |
-| **Bandit**   | Comms Mode. Let's you push letters with `Thermite`, then print them using `Azami`. | **Mode** |
-| **Castle**   | Sentence Constructor. You type a sentence, and it prints it back. | **Mode** |
-| **Doc**      | Reversal Expert. Type something, and it prints it backwards. | **Mode** |
-| **Glaz**     | Sniper Math. Let the interpreter know that you are wanting to multiply. | **Mode** |
-| **Frost**    | Echo Trap. Let the interpreter know that you are wanting to repeat. | **Mode** |
-| **Fenir**    | F-NATT Mine. It takes in integer input (whether inputted or inside the file). | Input | 
-| **Iana**     | Gemini Replicator. Takes in any word/sentence | Input | 
-| **Deimos**   | DeathMark Tracker. When Deimos is called with Glaz, this will activate our multiplying function of two `Fenrir` Integers | Command | 
-| **Oryx**     | Remah Dash.When called with Frost, this will activate our repeating process of the string a `Fenrir` amount| Command | 
-| **Thermite** | ASCII Charge. `Thermite 65` pushes the letter **A** to the stack (since 65 is the ASCII code for A). | Command |
-| **Azami**    | Print & Prompt. Pops the top value and prints it. | Command |
+| **Bandit**   | Quick Comms: Let's you push letters with `Thermite`, then print them using `Azami`. | **Mode** |
+| **Castle**   | Sentence Constructor:  You type a sentence, and it prints it back. | **Mode** |
+| **Doc**      | Reversal Expert: Type something, and it prints it backwards. | **Mode** |
+| **Glaz**     | Sniper Math: Let the interpreter know that you are wanting to multiply. | **Mode** |
+| **Frost**    | Echo Trap: Let the interpreter know that you are wanting to repeat. | **Mode** |
+| **Fenir**    | F-NATT Mine:  It takes in integer input (whether inputted or inside the file). | Input | 
+| **Iana**     | Gemini Replicator:  Takes in any word/sentence | Input | 
+| **Deimos**   | DeathMark Tracker:  When Deimos is called with Glaz, this will activate our multiplying function of two `Fenrir` Integers | Command | 
+| **Oryx**     | Remah Dash: When called with Frost, this will activate our repeating process of the string a `Fenrir` amount| Command | 
+| **Thermite** | ASCII Charge: `Thermite 65` pushes the letter **A** to the stack (since 65 is the ASCII code for A). | Command |
+| **Azami**    | Print & Prompt: Pops the top value and prints it. | Command |
 
 > 💡 **Reminder:** You must start every program with `Tachanka <mode>`, or Siege Code won't know what to do!
 
