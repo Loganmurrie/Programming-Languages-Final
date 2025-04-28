@@ -12,14 +12,23 @@ def reverse_mode(stack):
 
 def run(file_path):
     stack = []
+
     output = ""
+
     mode = ""
+
     cat_input_loaded = False
+
     mult_inputs = []
+
     mult_result = None
+
     repeat_string = ""
+
     repeat_count = 0
+
     inside_repeat_loop = False
+
     repeat_loop_commands = []
 
     with open(file_path, 'r') as f:
@@ -35,16 +44,20 @@ def run(file_path):
         if parts[0] == "Tachanka":
             if parts[1] == "Bandit":
                 mode = "msg"
+
             elif parts[1] == "Castle":
                 mode = "cat"
                 cat_input_loaded = False
+
             elif parts[1] == "Doc":
                 mode = "reverse"
                 cat_input_loaded = False
+
             elif parts[1] == "Glaz":
                 mode = "multiply"
                 mult_inputs = []
                 mult_result = None
+
             elif parts[1] == "Frost":
                 mode = "repeat"
                 repeat_string = ""
@@ -52,6 +65,9 @@ def run(file_path):
                 inside_repeat_loop = False
                 repeat_loop_commands = []
             output = ""
+
+
+#Fenrir - If it is not in the file, then get the numbers from the user
 
         elif parts[0] == "Fenrir":
             if mode == "multiply":
@@ -68,6 +84,8 @@ def run(file_path):
                 else:
                     repeat_count = int(input("Enter how many times to repeat it: "))
 
+#Repeater Function
+
         elif mode == "repeat":
             if parts[0] == "Iana":
                 repeat_string = input("Enter the string to repeat: ")
@@ -76,6 +94,8 @@ def run(file_path):
             elif inside_repeat_loop:
                 repeat_loop_commands.append(parts[0])
 
+#Multiply Function
+
         elif parts[0] == "Deimos" and mode == "multiply":
             if len(mult_inputs) == 2:
                 print(f"Multiplying {mult_inputs[0]} * {mult_inputs[1]}")
@@ -83,6 +103,9 @@ def run(file_path):
             else:
                 return
 
+
+
+ 
         elif parts[0] == "Thermite":
             if mode in ("cat", "reverse") and not cat_input_loaded:
                 user_input = input("Enter a message to echo: ")
@@ -99,18 +122,22 @@ def run(file_path):
         elif parts[0] == "Azami":
             if mode == "msg":
                 output += msg_mode(stack)
+
             elif mode == "cat":
                 while stack:
                     output += cat_mode(stack)
             elif mode == "reverse":
+
                 while stack:
                     output += reverse_mode(stack)
                 output = output[::-1]
+
             elif mode == "multiply":
                 if mult_result is not None:
                     output = mult_result
                 else:
                     return
+
             elif mode == "repeat":
                 if inside_repeat_loop:
                     repeat_loop_commands.append("Azami")
